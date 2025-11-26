@@ -4,6 +4,10 @@
   become: "yes"
   vars_files:
     - nginx-vars.yaml
+  vars_prompt:
+    name: "What is your name: "
+    prompt: "NAME"
+    private: true
   # vars:
   #   NAME: "Vinay Kumar"
   #   ROLE: "DevOps"
