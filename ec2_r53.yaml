@@ -5,7 +5,7 @@
     instance_type: t3.micro
     security_group: sg-03c4d065bf7f7f94d
     image_id: ami-09c813fb71547fc4f
-    zone: bloombear.fun
+    domain: bloombear.fun
   tasks: 
 
   - name: Creating EC2 Instances
@@ -25,8 +25,8 @@
   # - name: Creating or Updating R53 Records
   #   amazon.aws.route53:
   #     state: present
-  #     zone: "{{zone}}"
-  #     record: new.foo.com
+  #     zone: "{{domain}}"
+  #     record: "{{}}.{{domain}}"
   #     type: A
   #     ttl: 1
   #     value: #next
