@@ -14,11 +14,11 @@
       instance_type: "{{instance_type}}"
       security_group: "{{security_group}}"
       image_id: "{{image_id}}"
+      tags:
+        Name: "{{ item }}"
     loop: "{{instances}}"
     register: output
     
-  
-
 
 # - name: create ec2 and r53
 #   hosts: local
