@@ -49,7 +49,7 @@
   - name: downloading catalogue application
     ansible.builtin.get_url:
       url: https://roboshop-artifacts.s3.amazonaws.com/catalogue-v3.zip
-      dest: /tmp
+      dest: /tmp/catalogue.zip
 
   # unzipping the catalogue file
   - name: extracting the catalogue file into app directory
