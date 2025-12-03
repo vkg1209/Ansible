@@ -1,4 +1,4 @@
-- name: Setting up payment server
+- name: Configuring payment server
   hosts: payment
   become: yes
   vars:

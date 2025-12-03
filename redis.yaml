@@ -1,4 +1,4 @@
-- name: Setting up Redis server
+- name: Configuring Redis server
   hosts: redis
   become: yes
   tasks:

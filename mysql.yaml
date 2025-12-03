@@ -1,4 +1,4 @@
-- name: Setting up mysql server
+- name: Configuring mysql server
   hosts: mysql
   become: yes
   tasks:
